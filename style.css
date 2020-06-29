@@ -16,7 +16,8 @@ header
 figure
 {
     flex:1.6;
-    background-color: chartreuse;
+    max-width: 210px;
+    background-color: rgb(118,255,3);
     margin: auto;
     padding: 30px 30px;
 }
@@ -43,7 +44,7 @@ h1
 
 .filet
 {
-    background-color: chartreuse;
+    background-color: rgb(118,255,3);
     height: 3px;
     width: 100px;
 }
@@ -66,28 +67,24 @@ h1
     order:2;
 }
 
-.element:nth-child(2)
-{
-    flex:1.6;
-}
-
-.element:nth-child(1)
-{
-    flex:6;
-}
-
 /** aside **/
 
 aside
 {
-    min-width: 210px;
-    background-color: chartreuse;
+    flex:1.6;
+    min-width: 270px;
+    max-width: 270px;
+    background-color: rgb(118,255,3);
+}
+
+aside p
+{
     padding: 0px 30px;
 }
 
 h2
 {
-    font-family: 'CantoraOne-Regular';
+    font-family: 'CantoraOne-Regular', sans-serif;
     font-size: 1.6em;
 }
 
@@ -110,18 +107,35 @@ aside p
 
 .loisirs
 {
+    display: flex;
+    justify-content: center;
+}
+
+.icone
+{
+    width:40px;
+    height: 40px;
+    margin: 8px;
+    border:solid black 2px;
+    border-radius: 50%;
     text-align: center;
+}
+
+.icone i
+{
+    padding-top: 11px;
 }
 /** article **/
 
-article
+section
 {
+    flex:6;
     margin-left: 70px;
 }
 
 .filet_2
 {
-    background-color: chartreuse;
+    background-color: rgb(118,255,3);
     height: 3px;
     width: 600px;
     margin-top: 15px;
@@ -166,26 +180,34 @@ article
     flex:5;
 }
 
-.referent_1, .referent_2
-{
-    flex: 1;
-}
-
-article h3
+section h3
 {
     font-family: sans-serif;
     text-transform: uppercase;
     font-size: 1.2em;
 }
 
-article h4
+section h4
 {
     font-family: sans-serif;
     font-size: 0.9em;
 }
 
-article p
+section p, section ul
 {
     font-family: sans-serif;
     font-size: 0.7em;
+}
+
+.referents ul
+{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.referents li
+{
+    margin-right: 50px;
 }
