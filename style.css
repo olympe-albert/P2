@@ -55,6 +55,32 @@ h1
     font-size: 1.4em;
 }
 
+@media screen and (max-width: 450px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo
+    {
+        width:100%;
+        background-color: rgb(118,255,3);
+    }
+    
+    figure
+    {
+        margin: auto;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .titre
+    {
+        margin:auto;
+    }
+
+}
 /** contenu **/
 
 .bloc_cv
@@ -65,6 +91,20 @@ h1
 .element:nth-child(1)
 {
     order:2;
+}
+
+@media screen and (max-width: 450px)
+{
+    .bloc_cv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .element:nth-child(2)
+    {
+        order:2;
+    }
 }
 
 /** aside **/
@@ -125,6 +165,31 @@ aside p
 {
     padding-top: 11px;
 }
+
+@media screen and (max-width: 450px)
+{
+    aside
+    {
+        min-width: 270px;
+        max-width: 450px;
+        margin-top: 50px;
+        background-color: rgb(118,255,3);
+    }
+
+    aside p
+    {
+        font-family: sans-serif;
+        font-size: 0.9em;
+    }
+    
+    .loisirs
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
 /** article **/
 
 section
@@ -210,4 +275,26 @@ section p, section ul
 .referents li
 {
     margin-right: 50px;
+}
+
+@media screen and (max-width: 450px)
+{
+    section
+    {
+        margin-left: 20px;
+    }
+
+    .filet_2
+    {
+        background-color: rgb(118,255,3);
+        height: 3px;
+        width: 300px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .paragraphe_dates
+    {
+        flex:1.7;
+    }
 }
